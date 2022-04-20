@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG-Electromecanica</title>
+
+    <title>Formulario_de_contacto</title>
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('xg7mkducG9OWZCGZF');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('Formulario_Enzo_ID').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('service_2a87e4g', 'Formulario_Enzo_ID', this)
+                    .then(function() {
+                        console.log('El Email fue enviado con exito!');
+                    }, function(error) {
+                        console.log('Ocurrio un problema el enviar el mail...', error);
+                    });
+            });
+        }
+    </script>
+    <link rel="shortcut icon" href="../Imagenes/4e60fa416a33f12786f83f4a29c095e5-icono-de-llave-inglesa-y-engranaje.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header  class="cabecera__paginas">
+        <img src="../Imagenes/LOGO.jpg" alt="Logo de empresa" >
+        <nav>
+            <ul class="cabecera__indexs__paginas">
+                <li class="cabecera__indexs__items__paginas">
+                    <a href="../index.html">Home</a>
+                </li>
+                 <li class="cabecera__indexs__items__paginas">
+                    <a href="./Motoreductores.html">Motorreductores</a>
+                 </li>
+                 <li class="cabecera__indexs__items__paginas">
+                    <a href="./Ventilacion.html">Ventilacion</a>
+                  </li>
+                  <li class="cabecera__indexs__items__paginas"> 
+                    <a href="./Acoplamientos.html">Acoplamientos</a>
+                 </li>
+                 <li class="cabecera__indexs__items__paginas">
+                    <a href="./Accionamiento-y-Drivers.html">Accionamiento y Drivers</a>
+                 </li>
+                 <li class="cabecera__indexs__items__paginas">
+                    <a href="./Contacto.html"class="cabecera__lista__items">Contacto</a>
+                 </li>
+            </ul> 
+        </nav>
+    </header>
+    <main  class="main">
+
+        <div>
+            <span class="prevformulario">Atravez de este formulario puede contactarse con nosotros para realizar cualquier tipo de consulta, pedir presupuesto o asesoramiento. Una vez que su cunsulta haya sido enviada, nos pondremos en contacto con usted lo más pronto posible.</span>
+        </div>
+
+        <form id="Formulario_Enzo_ID" class="formulario">
+        <div class="fieldset">
+                <legend>Formulario de contacto</legend>
+
+                <input type="hidden" name="contact_number">
+                <label for="Nombre_y_apellido">Nombre y apellido</label>
+                <input type="text" name="Nombre_y_apellido" id="Nombre_y_apellido">
+                <div>
+                    <label for="Numero_de_telefono">Numero de telefono</label>
+                    <input type="tel" name="Numero_de_telefono" id="Numero_de_telefono">
+                </div>
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="Email" id="Email" name="Email">
+                </div>
+                <div>
+                    <label for="Haga_su_consulta">Comuniquese con nosotros</label>    
+                </div>
+                <div>
+                    <textarea rows="8" cols="80" id="Formulario_Enzo_ID" placeholder="Realice su consulta aqui..."></textarea>
+                </div>
+            
+            <div class="contenedor__boton">
+                <input type="submit" name="Enviar" value="Enviar" class="boton">
+            </div>
+    </div>
+        </form>
+        <br>
+        <br>
+    </main>
+    <footer class="footer__paginas">
+        <div class="footer__whatsapp__paginas">
+            <p>Contactanos al WhatsApp</p>
+            <img src="../Imagenes/whatsapp.png" alt="Contacto de whatsapp"> <h6>+54-0353-4299069</h6>
+        </div>
+        <div class="footer__horario__paginas">
+            <p>Horario de atencion y telefono fijo</p>
+            <img src="../Imagenes/calendario-de-rodaje.png" alt="Horario de atencion al publico y telefono fijo"> 
+            <h6>Horario de atencion al publico de Lunes a Viernes de 09:00hs a 13:30hs</h6>
+            <h6> Telefono fijo: +54-353-4527627 </h6>
+        </div>
+        <div class="footer__email__paginas"> 
+            <p>Contactanos al Email</p>
+            <img src="../Imagenes/email.png" alt="Contalto al Email"> <h6>rgobbatomotores@hotmail.com</h6>
+        </div>
+    </footer>
+</body>
+    </body>
+    </html>
