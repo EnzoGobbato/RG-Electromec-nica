@@ -93,18 +93,34 @@
 
 }
 
+
 .cuerpo__trayectoria{
-    width: 70%;
+    width: 80%;
     height: 30%;
     padding-top: 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     overflow: hidden;
     padding-right: 15%;
     padding-left: 15%;
     padding-bottom: 1.5rem;
     border-bottom: solid 2px;
+}
+
+.cuerpo__trayectoria:hover{
+    background-color: #363a4749;
+    border: solid 3px;
+    border-radius: 10%;
+    padding: 3%;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    transition-property: inherit;
+    transition-duration: 1.2s;
+    transition-delay: 0.5s;
+    width: 60%;
+
 }
 
 .cuerpo__trayectoria img{
@@ -129,10 +145,25 @@
     justify-content: center;
     overflow: hidden;
     padding-right: 15%;
-    padding-left: 15%;
+    padding-left: 5%;
     padding-bottom: 1.5rem;
     border-bottom: solid 2px;
     border-color: #212940;
+}
+
+.cuerpo__ascesoria:hover{
+    background-color: #363a4749;
+    border: solid 3px;
+    border-radius: 10%;
+    padding: 3%;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    transition-property: inherit;
+    transition-duration: 1.2s;
+    transition-delay: 0.5s;
+    width: 60%;
+
 }
 
 .cuerpo__ascesoria img{
@@ -141,7 +172,7 @@
 }
 
 .cuerpo__ascesoria__texto{
-    padding: 1rem 7rem 1rem 7rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
