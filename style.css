@@ -274,7 +274,6 @@
     border-color: #000000;
     font-family: 'Oswald', sans-serif;
     position: sticky;
-    top: 0px;
     
 }
 
@@ -286,6 +285,8 @@
     align-items: center;
     list-style: none;
     padding-left: 15px;
+    padding-top: 12px;
+
 }
 
 .cabecera__indexs__items__paginas{
@@ -296,7 +297,7 @@
     padding-top: 14px;
     background-color: #f0b342e1;
     width: 168px;
-    height: 39px;
+    height: 59px;
     border: solid 2px;
     border-color: #021d3b;
     border-radius: 10%;
@@ -339,8 +340,11 @@
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-
+    list-style: none;
+    padding: 0%;
+    
 }
+
 
 .cuerpo__titulo__cosas__paginas li{
     padding-bottom: 10px;
@@ -361,55 +365,23 @@
 
 .prevformulario{
     display: flex;
-    border: solid 2px;
+    border-bottom: solid 2px;
     justify-content: center;
-    padding: 10px;
-    margin: 20px 150px 20px 150px;
+    padding: 20px;
+    margin: 1rem 6rem 1rem 6rem;
     text-align: center;
     font-size: larger;
 }
 
 .formulario{
-    font-size: larger;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: 1rem 8rem 1rem 8rem;
+    padding: 1rem;
+    border: solid 1px;
 }
-
-.formulario fieldset{
-    padding: 20px 20px 20px 20px;
-    padding: 20px auto;
-}
-
-.fieldset{
-    border: solid 5px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 50%;
-    height: 70%;
-}
-
-.formulario label{
-    padding: 20px 20px 20px 20px;
-}
-
-.formulario input{
-    width: 25rem;
-    height: 1rem;
-    display: flex;
-    flex-direction: column;
-    margin: 7px;
-}
-
 
 .contenedor__boton{
-    padding-left: 81%;
-    width: 6%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    justify-content: flex-end;
 }
 
 
@@ -417,68 +389,48 @@
 
 .footer__paginas{
     background-color: #021d3b;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
     border-top: solid 10px;
     border-color: #021123;
 }
-
-.footer__paginas p{
-    color: #f8f6e4;
-    font-size: large;
-    font-weight: 600;
-    text-decoration-line: underline;
-    text-align: center;
-}
-
-.footer__whatsapp__paginas{
-    border: solid 3px;
-    padding: 1rem;
-}
-
-.footer__whatsapp__paginas img{
-    padding-left: 35%;
-}
-
-.footer__email__paginas{
-    border: solid 3px;
-    padding: 1rem;
-
-}
-
-.footer__email__paginas img{
-    padding-left: 35%;
-}
-
-.footer__horario__paginas{
-    border: solid 3px;
-    padding: 1rem;
+.col__paginas{
+    border: solid 4px;
+    border-color: #021123;
+    border-radius: 30%;
     margin: 1rem;
-
-}
-
-.footer__horario__paginas img{
-    padding-left: 43%;
-}
-
-.footer__paginas h6{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color: #f8f6e4;
-    font-size: medium;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
     text-align: center;
 }
 
-.footer__paginas img{
-    padding-top: 2%;
-    padding-bottom: 2%;
+
+.footer-wrap__paginas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col-6{
+    border: solid 4px;
+    border-color: #021123;
+    border-radius: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    color: white;
+    text-align: center;
 }
 
 
