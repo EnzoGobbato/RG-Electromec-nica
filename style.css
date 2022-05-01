@@ -215,6 +215,7 @@
     border-bottom: solid 8px;
     border-color: #021d3b;
     flex-wrap: wrap;
+
 }
 
 .sidebar__rotar{
@@ -416,51 +417,30 @@ li{
 /*FOOTER OTROS HTMLS FOOTER OTROS HTMLS FOOTER OTROS HTMLS FOOTER OTROS HTMLS FOOTER OTROS HTMLS FOOTER OTROS HTMLS FOOTER OTROS HTMLS*/
 
 .footer__paginas{
-    background-color: #021d3b;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    align-items: center;
+    background-color: #021123;
+    border-top: solid 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    border-top: solid 10px;
-    border-color: #021123;
+
 }
-.col__paginas{
-    border: solid 4px;
-    border-color: #021123;
-    border-radius: 30%;
+
+.cards__contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+
+}
+
+
+.col-md-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
-    color: white;
-    text-align: center;
 }
 
-
-.footer-wrap__paginas{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.col-6{
-    border: solid 4px;
-    border-color: #021123;
-    border-radius: 30%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-
+/*MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys*/
 
 @media only screen and (max-width: 768px) {
     .cabecera{
@@ -588,7 +568,7 @@ li{
 
     }
 
-    /*media querys otros htmls*/
+    /*MediaQuerys otros htmls MediaQuerys otros htmls MediaQuerys otros htmls MediaQuerys otros htmls MediaQuerys otros htmls*/
 
     .cabecera__paginas{
         background-color: #363a47;
