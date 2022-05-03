@@ -431,6 +431,112 @@ li{
 
 /*MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys MediaQuerys*/
 
+@media only screen and (max-width: 1280px){
+
+.cabecera{
+    background-color: #242a3f;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 10px;
+    border-color: #000000;
+    font-family: 'Oswald', sans-serif;
+    position: inherit;
+}
+
+.cabecera__indexs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    list-style: none;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.cabecera img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+}
+
+
+.cuerpo__quienessomos{
+    width: 100%;
+    height: 19rem;
+    padding: 1.5rem;
+    border-top: solid 1rem;
+    border-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -0.5rem;
+    justify-items: center;
+    font-size: large;
+    font-family: serif;
+    font-weight: 500;
+    word-spacing: 2px;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sidebar{
+    display: none;
+    
+}
+
+svg{
+    display: none;
+}
+
+/*MediaQuerys otros htmls MediaQuerys otros htmls MediaQuerys otros htmls MediaQuerys otros htmls MediaQuerys otros htmls*/
+
+
+.cabecera__paginas{
+
+    background-color: #242a3f;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-left: solid 10px;
+        border-bottom: solid 10px;
+        border-color: #000000;
+        font-family: 'Oswald', sans-serif;
+        position: inherit;
+        width: auto;
+        height: auto;
+
+}
+
+.cabecera__indexs__paginas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    list-style: none;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.cabecera__paginas img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+}
+
+}
+
 @media only screen and (max-width: 768px) {
 
     .cabecera{
@@ -469,9 +575,10 @@ li{
     }
 
     .cabecera img{
-        width: 100%;
+        width: 99%;
         height: 100%;
     }
+    
     .cuerpo__quienessomos{
         width: 23rem;
         height: 36rem;
@@ -572,7 +679,7 @@ li{
     .cabecera__paginas{
         background-color: #242a3f;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         justify-content: center;
         align-items: center;
@@ -624,7 +731,7 @@ li{
         padding: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-items: center;
         gap: 2rem;
         
@@ -651,62 +758,9 @@ li{
         justify-items: center;
         width: 100%;
         height: 100%;
+        margin: 0%;
     }
 
-    .fieldset{
-        border: solid 5px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 90%;
-        height: 100%;
-    }
-
-    .fieldset input{
-        width: 5vw;
-        height: 5vw;
-    }
-    
-    .formulario fieldset{
-        padding: 1rem;
-        padding: 1rem;
-    }
-    
-    .formulario label{
-        padding: 1rem;
-    
-    }
-    
-    .formulario input{
-        width: 15rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
-
-    .formulario textarea{
-        width: 15rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin: 1rem;
-
-    }
-    
-    .contenedor__boton{
-        padding-left: 75%;
-        width: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .contenedor__boton input{
-        display: flex;
-        justify-content: center;
-    }
 
     /*FOOTER TODA LA PAGINA - FOOTER TODA LA PAGINA - FOOTER TODA LA PAGINA - FOOTER TODA LA PAGINA - FOOTER TODA LA PAGINA*/
 
