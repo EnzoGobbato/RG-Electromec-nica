@@ -1,8 +1,42 @@
 /*VARIABLES DE COLORES*/
 
-$color-HeaderyFooter: #242a3f;
-$color-cosasHeader: #e99f17;
-$color-main: #f5f5f5;
-$color-border: #000000;
-$color-BorderHeader: #021d3b;
+$color-AzulMedio: #242a3f;
+$color-Mostaza: #e99f17;
+$color-Blanco: #f5f5f5;
+$color-Negro: #000000;
+$color-AzulOcuro: #021d3b;
 
+/* MAPS*/
+
+/*EXTEND*/
+
+%Border-10px{
+    border: solid 10px;
+    border-color: #000000;
+}
+
+/*MIXIN*/
+
+@mixin grid ($columns, $rows, $justify, $aling){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    justify-content: $justify;
+    align-items: $aling;
+
+}
+
+@mixin flex ($direction, $justify, $aling){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+    
+}
+
+@mixin tamaño ($width, $height) {
+    width: $width;
+    height: $height;
+    
+}
