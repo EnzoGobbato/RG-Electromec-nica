@@ -1,13 +1,13 @@
 .cabecera{
     background: ($color-AzulMedio);
     font-family: 'Oswald', sans-serif;
-    @include grid (1fr 5fr, auto, space-between, center);
+    @include grid (1fr 5fr, none, space-between, center);
     @extend %Border-10px;
     position: sticky;
     top: 0px;
 
     &__indexs{
-        @include grid (1fr 1fr 1fr 1fr 1fr, auto, space-between, center);
+        @include grid (1fr 1fr 1fr 1fr 1fr, none, space-between, center);
         list-style: none;
         margin-top: 1rem;
         
@@ -42,7 +42,7 @@
 .cuerpo{
     background-color:($color-Blanco) ;
     padding-top: 0.5%;
-    @include flex (row, center, auto);
+    @include flex (row, center, none);
     margin-top: -2rem;
     font-family: 'Oswald', sans-serif;
     border-right: solid 10px;
@@ -53,12 +53,12 @@
             @include tamaño (100%, 15%);
             padding-top: 3rem;
             background-color: #242a3fef;
-            @include flex (column, auto, center);
+            @include flex (column, none, center);
             font-size: large;
             text-align: center;
             overflow: hidden;
             font-family: 'Oswald', sans-serif;
-            color: ($color-AzulMedio);
+            color: ($color-Blanco);
 
             & h6{
                 width: 85%;
@@ -73,7 +73,8 @@
     width: 90%;
     height: 35%;
     padding-top: 5rem;
-    @include flex (row, space-between, auto);
+    @include flex (row, space-between, none);
+    flex-wrap: nowrap;
     overflow: hidden;
     padding-right: 15%;
     padding-left: 15%;
@@ -82,13 +83,14 @@
 
         &:hover{
             background-color: #242a3fef;
-            color: ($color-AzulMedio);
+            color: ($color-Blanco);
             border: solid 3px;
             border-radius: 7%;
             border-color: ($color-AzulOcuro);
             padding: 3%;
             margin: 3rem;
-            @include flex (auto, center, auto);
+            @include flex (none, center, none);
+            flex-wrap: nowrap;
             transition-property: inherit;
             transition-duration: 1.2s;
             transition-delay: 0.5s;
@@ -109,7 +111,8 @@
 .cuerpo__ascesoria{
     @include tamaño (90%, 35%);
     padding-top: 5rem;
-    @include flex (row, center, auto);
+    @include flex (row, center, none);
+    flex-wrap: nowrap;
     overflow: hidden;
     padding-right: 15%;
     padding-left: 5%;
@@ -119,13 +122,14 @@
 
         &:hover{
             background-color: #242a3fef;
-            color: ($color-AzulMedio);
+            color: ($color-Blanco);
             border: solid 3px;
             border-radius: 7%;
             border-color: #021123;
             padding: 3%;
             margin: 3rem;
-            @include flex (auto, center, auto);
+            @include flex (none, center, none);
+            flex-wrap: nowrap;
             transition-property: inherit;
             transition-duration: 1.2s;
             transition-delay: 0.5s;
@@ -145,7 +149,8 @@
 
 .cuerpo__ubicacion{
     @include tamaño (95%, 45%);
-    @include flex (row, center, auto);
+    @include flex (row, center, none);
+    flex-wrap: nowrap;
     padding-top: 2rem;
     padding-bottom: 2rem;
     overflow: hidden;
@@ -165,8 +170,8 @@
 }
 
 .sidebar{
-    background-color: ($color-Blanco);
-    @include grid (1fr 1fr 1fr 1fr 1fr 1fr 1fr, auto, auto, auto);
+    background-color: #ffffff;
+    @include grid (1fr 1fr 1fr 1fr 1fr 1fr 1fr, none, none, none);
     border-top: solid 8px;
     border-color: ($color-Negro);
     flex-wrap: wrap;
@@ -180,7 +185,7 @@
 }
 
 .footer__paginas{
-    background-color: ($color-AzulOcuro);
+    background-color: ($color-AzulMedio);
     border-top: solid 10px;
     border-color: ($color-Negro);
     @include grid (1fr 1fr 1fr, auto, auto, auto);

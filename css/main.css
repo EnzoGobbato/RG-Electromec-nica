@@ -11,18 +11,19 @@
   background-color: #242a3f;
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: auto;
+  grid-template-rows: none;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border-left: solid 10px;
+  border-color: #000000;
   font-family: 'Oswald', sans-serif;
   position: sticky; }
 
 .cabecera__indexs__paginas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: none;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -67,12 +68,12 @@
 .cuerpo__titulo__paginas {
   border-bottom: solid 6px;
   border-color: #e79e176d;
-  padding: 2px;
+  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: auto;
+  flex-direction: none;
   justify-content: center;
-  align-items: auto; }
+  align-items: none; }
 
 .cuerpo__titulo__cosas__paginas {
   background-color: #bdbdbd;
@@ -151,7 +152,7 @@ li {
   font-family: 'Oswald', sans-serif;
   display: grid;
   grid-template-columns: 1fr 5fr;
-  grid-template-rows: auto;
+  grid-template-rows: none;
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -159,7 +160,7 @@ li {
   .cabecera__indexs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: none;
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -193,7 +194,7 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  align-items: auto;
+  align-items: none;
   margin-top: -2rem;
   font-family: 'Oswald', sans-serif;
   border-right: solid 10px;
@@ -207,13 +208,13 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: auto;
+    justify-content: none;
     align-items: center;
     font-size: large;
     text-align: center;
     overflow: hidden;
     font-family: 'Oswald', sans-serif;
-    color: #242a3f; }
+    color: #f5f5f5; }
     .cuerpo__quienessomos h6 {
       width: 85%;
       margin-top: -0.5rem;
@@ -228,7 +229,8 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: auto;
+  align-items: none;
+  flex-wrap: nowrap;
   overflow: hidden;
   padding-right: 15%;
   padding-left: 15%;
@@ -236,7 +238,7 @@ li {
   border-bottom: solid 2px; }
   .cuerpo__trayectoria:hover {
     background-color: #242a3fef;
-    color: #242a3f;
+    color: #f5f5f5;
     border: solid 3px;
     border-radius: 7%;
     border-color: #021d3b;
@@ -244,9 +246,10 @@ li {
     margin: 3rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: auto;
+    flex-direction: none;
     justify-content: center;
-    align-items: auto;
+    align-items: none;
+    flex-wrap: nowrap;
     transition-property: inherit;
     transition-duration: 1.2s;
     transition-delay: 0.5s;
@@ -273,7 +276,8 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  align-items: auto;
+  align-items: none;
+  flex-wrap: nowrap;
   overflow: hidden;
   padding-right: 15%;
   padding-left: 5%;
@@ -282,7 +286,7 @@ li {
   border-color: #000000; }
   .cuerpo__ascesoria:hover {
     background-color: #242a3fef;
-    color: #242a3f;
+    color: #f5f5f5;
     border: solid 3px;
     border-radius: 7%;
     border-color: #021123;
@@ -290,9 +294,10 @@ li {
     margin: 3rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: auto;
+    flex-direction: none;
     justify-content: center;
-    align-items: auto;
+    align-items: none;
+    flex-wrap: nowrap;
     transition-property: inherit;
     transition-duration: 1.2s;
     transition-delay: 0.5s;
@@ -318,7 +323,8 @@ li {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  align-items: auto;
+  align-items: none;
+  flex-wrap: nowrap;
   padding-top: 2rem;
   padding-bottom: 2rem;
   overflow: hidden;
@@ -339,12 +345,12 @@ li {
   border-style: inset; }
 
 .sidebar {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  justify-content: auto;
-  align-items: auto;
+  grid-template-rows: none;
+  justify-content: none;
+  align-items: none;
   border-top: solid 8px;
   border-color: #000000;
   flex-wrap: wrap; }
@@ -355,7 +361,7 @@ li {
   padding: 1rem 2rem 1rem 2rem; }
 
 .footer__paginas {
-  background-color: #021d3b;
+  background-color: #242a3f;
   border-top: solid 10px;
   border-color: #000000;
   display: grid;
