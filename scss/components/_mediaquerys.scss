@@ -357,9 +357,17 @@ h1{
     height: 90%;
 }
 
+.cuerpo__trayectoria:hover{
+    display: none;
+}
+
 .cuerpo__ascesoria img{
     width: 70%;
     height: 70%;
+}
+
+.cuerpo__ascesoria:hover{
+    display: none;
 }
 
 .cuerpo__ubicacion{
