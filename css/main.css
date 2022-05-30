@@ -1,5 +1,4 @@
 /*VARIABLES DE COLORES*/
-/* MAPS*/
 /*EXTEND*/
 .cabecera__paginas, .cabecera {
   border: solid 10px;
@@ -144,8 +143,7 @@ li {
 .row {
   width: 100%;
   height: 100%;
-  --bs-gutter-x: none:
-; }
+  margin-left: 0%; }
 
 .cabecera {
   background: #242a3f;
@@ -345,6 +343,8 @@ li {
   border-style: inset; }
 
 .sidebar {
+  width: 100%;
+  height: 10%;
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -503,7 +503,7 @@ li {
   .img-fluid {
     width: 50%; }
   .mb-3 {
-    padding: 1rem; } }
+    padding: 0.5rem; } }
 
 /*MEDIA QUERYS 768 INDEX*/
 @media only screen and (max-width: 768px) {
@@ -749,9 +749,13 @@ li {
   .cuerpo__trayectoria img {
     width: 90%;
     height: 90%; }
+  .cuerpo__trayectoria:hover {
+    display: none; }
   .cuerpo__ascesoria img {
     width: 70%;
     height: 70%; }
+  .cuerpo__ascesoria:hover {
+    display: none; }
   .cuerpo__ubicacion {
     width: 95%;
     height: 45%;

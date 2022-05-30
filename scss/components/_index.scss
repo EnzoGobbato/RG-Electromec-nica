@@ -170,6 +170,7 @@
 }
 
 .sidebar{
+    @include tamaño (100%, 10%);
     background-color: #ffffff;
     @include grid (1fr 1fr 1fr 1fr 1fr 1fr 1fr, none, none, none);
     border-top: solid 8px;
