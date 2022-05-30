@@ -238,9 +238,9 @@ li {
     background-color: #242a3fef;
     color: #f5f5f5;
     border: solid 3px;
-    border-radius: 7%;
+    border-radius: 17%;
     border-color: #021d3b;
-    padding: 3%;
+    padding: 0%;
     margin: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -249,9 +249,9 @@ li {
     align-items: none;
     flex-wrap: nowrap;
     transition-property: inherit;
-    transition-duration: 1.2s;
-    transition-delay: 0.5s;
-    width: 70%;
+    transition-duration: 1.6s;
+    transition-delay: 0.6s;
+    width: 100%;
     text-align: center; }
 
 .cuerpo__trayectoria__texto {
@@ -286,9 +286,9 @@ li {
     background-color: #242a3fef;
     color: #f5f5f5;
     border: solid 3px;
-    border-radius: 7%;
+    border-radius: 17%;
     border-color: #021123;
-    padding: 3%;
+    padding: 0%;
     margin: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -297,9 +297,9 @@ li {
     align-items: none;
     flex-wrap: nowrap;
     transition-property: inherit;
-    transition-duration: 1.2s;
-    transition-delay: 0.5s;
-    width: 70%;
+    transition-duration: 1.6s;
+    transition-delay: 0.6s;
+    width: 100%;
     text-align: center; }
 
 .cuerpo__ascesoria img {
