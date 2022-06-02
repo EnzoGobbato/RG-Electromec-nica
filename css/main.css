@@ -395,6 +395,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: auto;
+  flex-wrap: nowrap;
   margin: 1.5rem; }
 
 /*MEDIA QUERYS 1280 INDEX*/
