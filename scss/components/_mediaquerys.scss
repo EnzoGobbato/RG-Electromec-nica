@@ -1,31 +1,33 @@
 /*MEDIA QUERYS 1280 INDEX*/
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
 
-    .cabecera{
+    .cabecera {
         background-color: #242a3f;
         @include grid (1fr 1fr, 1fr, space-between, center);
         flex-wrap: wrap;
         border: solid 10px;
         border-color: #000000;
         font-family: 'Oswald', sans-serif;
-        position: inherit;    
-            &__indexs{
-                @include grid (1fr, 1fr 1fr 1fr 1fr 1fr, none, none);
-                gap: 1rem;
-                justify-items: center;
-                list-style: none;
-                padding: .5rem;
-                margin: 1rem;
-}
-}
-    .cabecera img{
+        position: inherit;
+
+        &__indexs {
+            @include grid (1fr, 1fr 1fr 1fr 1fr 1fr, none, none);
+            gap: 1rem;
+            justify-items: center;
+            list-style: none;
+            padding: .5rem;
+            margin: 1rem;
+        }
+    }
+
+    .cabecera img {
         @include flex (column, space-around, none);
         @include tamaño (100%, 100%);
     }
-    
-    
-    .cuerpo__quienessomos{
+
+
+    .cuerpo__quienessomos {
         @include tamaño (100%, 40%);
         padding: 1.5rem;
         border-top: solid 1rem;
@@ -42,26 +44,28 @@
         font-family: 'Oswald', sans-serif;
     }
 
-    .cuerpo__trayectoria{
+    .cuerpo__trayectoria {
         @include grid (1fr, none, center, center);
-        & img{
+
+        & img {
             width: 100%;
             height: 100%;
-    }}
-    
-    .sidebar{
-        display: none;    
+        }
     }
-    
-    svg{
+
+    .sidebar {
         display: none;
     }
 
-/*MEDIA QUERYS 1280 OTROS HTMLS*/
+    svg {
+        display: none;
+    }
 
-.cabecera__paginas{
-    background-color: #242a3f;
-    @include grid (1fr 1fr, 1fr, center, center);
+    /*MEDIA QUERYS 1280 OTROS HTMLS*/
+
+    .cabecera__paginas {
+        background-color: #242a3f;
+        @include grid (1fr 1fr, 1fr, center, center);
         flex-wrap: wrap;
         border-left: solid 10px;
         border-bottom: solid 10px;
@@ -71,371 +75,391 @@
         width: auto;
         height: auto;
 
-}
+    }
 
-.cabecera__indexs__paginas{
-    @include grid (1fr 1fr, 1fr 1fr 1fr, none, none);
-    gap: 1rem;
-    justify-items: center;
-    list-style: none;
-    padding: .5rem;
-    margin: 1rem;
-}
+    .cabecera__indexs__paginas {
+        @include grid (1fr 1fr, 1fr 1fr 1fr, none, none);
+        gap: 1rem;
+        justify-items: center;
+        list-style: none;
+        padding: .5rem;
+        margin: 1rem;
+    }
 
-.cabecera__paginas img{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 90%;
-    height: 100%;
-}
+    .cabecera__paginas img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 100%;
+    }
 
-/*FOOTER 1280*/
-.footer__paginas{
-    width: 100%;
-    @include flex (column, center, none);
-    
-}
+    /*FOOTER 1280*/
+    .footer__paginas {
+        width: 100%;
+        @include flex (column, center, none);
 
-.col-md-3{
-    @include flex (row, center, center);
-    margin: 1px;
-    margin-bottom: 1rem;
+    }
 
-}
+    .col-md-3 {
+        @include flex (row, center, center);
+        margin: 1px;
+        margin-bottom: 1rem;
 
-.cards__contacto{
-    display: grid;
-    align-items: center;
-}
+    }
 
-.img-fluid{
-    width: 50%;
-}
+    .cards__contacto {
+        display: grid;
+        align-items: center;
+    }
 
-.mb-3{
-    padding: 0.5rem;
-}
+    .img-fluid {
+        width: 50%;
+    }
+
+    .mb-3 {
+        padding: 0.5rem;
+    }
 }
 
 /*MEDIA QUERYS 768 INDEX*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 
-.cabecera{
-    background-color: #242a3f;
-    @include grid (1fr 1fr, 1fr, space-between, center);
-    flex-wrap: wrap;
-    border: solid 10px;
-    border-color: #000000;
-    font-family: 'Oswald', sans-serif;
-    position: inherit;
-        &__indexs{
+    .cabecera {
+        background-color: #242a3f;
+        @include grid (1fr 1fr, 1fr, space-between, center);
+        flex-wrap: wrap;
+        border: solid 10px;
+        border-color: #000000;
+        font-family: 'Oswald', sans-serif;
+        position: inherit;
+
+        &__indexs {
             @include grid (1fr, 1fr, none, center);
             list-style: none;
             padding: .1rem;
             margin: 1rem;
 
-}}
+        }
+    }
 
-.cabecera__indexs__items{
-    @include tamaño (10rem, 4rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-        & a{
+    .cabecera__indexs__items {
+        @include tamaño (10rem, 4rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+
+        & a {
             font-size: small;
-}
-}
-.cabecera img{
-    @include tamaño (100%, 100%);
-}
+        }
+    }
 
-.cuerpo__quienessomos{
-    @include tamaño (90%, 40%);
-    padding: 1.5rem;
-    border: solid 4px;
-    border-radius: 5%;
-    border-color: #5C6273;
-    border-style: outset;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 1rem;
-    justify-items: center;
-    font-size: large;
-    font-family: serif;
-    font-weight: 500;
-    word-spacing: 2px;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif;
-}
+    .cabecera img {
+        @include tamaño (100%, 100%);
+    }
 
-.cuerpo__trayectoria{
-    @include tamaño (100%, 40%);
-    padding-top: 2rem;
-    @include flex (row, center, none);
+    .cuerpo__quienessomos {
+        @include tamaño (90%, 40%);
+        padding: 1.5rem;
+        border: solid 4px;
+        border-radius: 5%;
+        border-color: #5C6273;
+        border-style: outset;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        justify-items: center;
+        font-size: large;
+        font-family: serif;
+        font-weight: 500;
+        word-spacing: 2px;
+        overflow: hidden;
+        font-family: 'Oswald', sans-serif;
+    }
 
-    overflow: hidden;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 1.5rem;
-    border-bottom: solid 2px;
-        & img{
+    .cuerpo__trayectoria {
+        @include tamaño (100%, 40%);
+        padding-top: 2rem;
+        @include flex (row, center, none);
+
+        overflow: hidden;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 1.5rem;
+        border-bottom: solid 2px;
+
+        & img {
             @include tamaño (90%, 60%);
             padding: 1rem;
             margin-top: 2rem;
-}}
+        }
+    }
 
-.cuerpo__ascesoria{
-    @include tamaño (100%, 30%);
-    padding-top: 1rem;
-    @include flex (row, center, none);
-    overflow: hidden;
-    padding-right: 1%;
-    padding-left: 5%;
-    padding-bottom: 1rem;
-    border-bottom: solid 2px;
-    border-color: #212940;
-        & img{
+    .cuerpo__ascesoria {
+        @include tamaño (100%, 30%);
+        padding-top: 1rem;
+        @include flex (row, center, none);
+        overflow: hidden;
+        padding-right: 1%;
+        padding-left: 5%;
+        padding-bottom: 1rem;
+        border-bottom: solid 2px;
+        border-color: #212940;
+
+        & img {
             display: flex;
             justify-content: center;
             @include tamaño (50%, 50%);
             padding-left: 1rem;
             padding-right: 2rem;
-}}
+        }
+    }
 
-.cuerpo__ascesoria__texto{
-    padding: 1rem;
-    @include flex (column, center, center);
-    flex-wrap: nowrap;
-}
+    .cuerpo__ascesoria__texto {
+        padding: 1rem;
+        @include flex (column, center, center);
+        flex-wrap: nowrap;
+    }
 
-.cuerpo__ubicacion{
-    @include tamaño (95%, 45%);
-    @include grid (1fr, none, none, none);
-    justify-items: center;
-    overflow: hidden;
-    padding-right: 1rem;
-    padding-left: 1rem;
-        &__texto{
+    .cuerpo__ubicacion {
+        @include tamaño (95%, 45%);
+        @include grid (1fr, none, none, none);
+        justify-items: center;
+        overflow: hidden;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        &__texto {
             padding-top: 1rem;
-}
-}
-.sidebar{
-    display: none;
-    
-}
+        }
+    }
 
-svg{
-    display: none;
-}
+    .sidebar {
+        display: none;
 
-/*MEDIA QUERYS 768 OTROS HTMLS*/
+    }
 
-.cabecera__paginas{
-    background-color: #242a3f;
-    @include grid (1fr 1fr, 1fr, center, center);
-    flex-wrap: wrap;
-    border-left: solid 10px;
-    border-bottom: solid 10px;
-    border-color: #000000;
-    font-family: 'Oswald', sans-serif;
-    position: inherit;
-    @include tamaño (auto, auto);
-        & img{
+    svg {
+        display: none;
+    }
+
+    /*MEDIA QUERYS 768 OTROS HTMLS*/
+
+    .cabecera__paginas {
+        background-color: #242a3f;
+        @include grid (1fr 1fr, 1fr, center, center);
+        flex-wrap: wrap;
+        border-left: solid 10px;
+        border-bottom: solid 10px;
+        border-color: #000000;
+        font-family: 'Oswald', sans-serif;
+        position: inherit;
+        @include tamaño (auto, auto);
+
+        & img {
             @include tamaño (100%, 100%);
-}}
+        }
+    }
 
-h1{
-    font-size: 7vw;
-}
+    h1 {
+        font-size: 7vw;
+    }
 
-.cabecera__indexs__paginas{
-    @include grid (1fr 1fr, 1fr, center, none);
-    list-style: none;
-    padding: .5rem;
-    margin: 1rem;
-}
+    .cabecera__indexs__paginas {
+        @include grid (1fr 1fr, 1fr, center, none);
+        list-style: none;
+        padding: .5rem;
+        margin: 1rem;
+    }
 
-.cabecera__indexs__items__paginas{
-    @include tamaño (11rem, 3rem);
-    padding-top: 5%;
-    display: flex;
-    justify-content: center;
-}
+    .cabecera__indexs__items__paginas {
+        @include tamaño (11rem, 3rem);
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
 
-.cuerpo__titulo__cosas__paginas li{
-    font-size: 5vw;
-}
+    .cuerpo__titulo__cosas__paginas li {
+        font-size: 5vw;
+    }
 
-.cuerpo__articulos{
-    border-top: solid 3px;
-    padding: 1rem;
-    @include grid (1fr 1fr, 1fr 1fr, none, none);
-    justify-items: center;
-    gap: 2rem;    
-}
+    .cuerpo__articulos {
+        border-top: solid 3px;
+        padding: 1rem;
+        @include grid (1fr 1fr, 1fr 1fr, none, none);
+        justify-items: center;
+        gap: 2rem;
+    }
 
-.prevformulario{
-    @include flex (column, center, none);
-    flex-wrap: wrap;
-    border: solid 2px;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: center;
-    font-size: larger;
-}
+    .prevformulario {
+        @include flex (column, center, none);
+        flex-wrap: wrap;
+        border: solid 2px;
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+        font-size: larger;
+    }
 
-.formulario{
-    font-size: larger;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    @include tamaño (100%, 100%);
-    margin: 0%;
-}
+    .formulario {
+        font-size: larger;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        @include tamaño (100%, 100%);
+        margin: 0%;
+    }
 
-/*FOOTER TODA LA PAGINA 768px*/
+    /*FOOTER TODA LA PAGINA 768px*/
 
-.footer__paginas{
-    width: 100%;
-    @include flex (column, center, none);
-    
-}
+    .footer__paginas {
+        width: 100%;
+        @include flex (column, center, none);
 
-.col-md-3{
-    @include flex (row, center, center);
-    margin: 1px;
-    margin-bottom: 1rem;
+    }
 
-}
+    .col-md-3 {
+        @include flex (row, center, center);
+        margin: 1px;
+        margin-bottom: 1rem;
 
-.cards__contacto{
-    display: grid;
-    align-items: center;
-}
+    }
 
-.img-fluid{
-    width: 50%;
-}
+    .cards__contacto {
+        display: grid;
+        align-items: center;
+    }
 
-.mb-3{
-    padding: 1rem;
-}
+    .img-fluid {
+        width: 50%;
+    }
+
+    .mb-3 {
+        padding: 1rem;
+    }
 }
 
 /*MEDIA QUERYS 450 INDEX*/
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
 
-.cabecera{
-    background-color: #242a3f;
-    @include grid (1fr, 1fr, space-between, center);
-    flex-wrap: wrap;
-    border: solid 10px;
-    border-color: #000000;
-    font-family: 'Oswald', sans-serif;
-    position: inherit;
-        &__indexs{
+    .cabecera {
+        background-color: #242a3f;
+        @include grid (1fr, 1fr, space-between, center);
+        flex-wrap: wrap;
+        border: solid 10px;
+        border-color: #000000;
+        font-family: 'Oswald', sans-serif;
+        position: inherit;
+
+        &__indexs {
             @include grid (1fr, 1fr, none, none);
             justify-items: center;
             list-style: none;
             padding: 1rem;
             margin: 0rem;
 
-}}
-.cabecera img{
-    width: 100%;
-}
-.cuerpo__quienessomos{
-    @include tamaño (95%, 40%);
-}
+        }
+    }
 
-.cuerpo__trayectoria img{
-    width: 90%;
-    height: 90%;
-}
+    .cabecera img {
+        width: 100%;
+    }
 
-.cuerpo__trayectoria:hover{
-    display: none;
-}
+    .cuerpo__quienessomos {
+        @include tamaño (95%, 40%);
+    }
 
-.cuerpo__ascesoria img{
-    width: 70%;
-    height: 70%;
-}
+    .cuerpo__trayectoria img {
+        width: 90%;
+        height: 90%;
+    }
 
-.cuerpo__ascesoria:hover{
-    display: none;
-}
+    .cuerpo__trayectoria:hover {
+        display: none;
+    }
 
-.cuerpo__ubicacion{
-    @include tamaño (95%, 45%);
-    @include grid (1fr, none, none, none);
-    flex-wrap: wrap;
-    justify-items: center;
-    overflow: hidden;
-    padding-right: 1rem;
-    padding-left: 1rem;
-        &__texto{
+    .cuerpo__ascesoria img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .cuerpo__ascesoria:hover {
+        display: none;
+    }
+
+    .cuerpo__ubicacion {
+        @include tamaño (95%, 45%);
+        @include grid (1fr, none, none, none);
+        flex-wrap: wrap;
+        justify-items: center;
+        overflow: hidden;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        &__texto {
             padding-top: 1rem;
-}}
+        }
+    }
 
-/*MEDIA QUERYS 450 OTROS HTMLS*/
+    /*MEDIA QUERYS 450 OTROS HTMLS*/
 
-.cabecera__paginas{
-    background-color: #242a3f;
-    @include grid (1fr, 1fr, center, center);
-    flex-wrap: wrap;
-    border-left: solid 10px;
-    border-bottom: solid 10px;
-    border-color: #000000;
-    font-family: 'Oswald', sans-serif;
-    position: inherit;
-    width: auto;
-    height: auto;
-        & img{
+    .cabecera__paginas {
+        background-color: #242a3f;
+        @include grid (1fr, 1fr, center, center);
+        flex-wrap: wrap;
+        border-left: solid 10px;
+        border-bottom: solid 10px;
+        border-color: #000000;
+        font-family: 'Oswald', sans-serif;
+        position: inherit;
+        width: auto;
+        height: auto;
+
+        & img {
             @include tamaño (100%, 100%);
-}}
+        }
+    }
 
-h1{
-    font-size: 7vw;
-}
+    h1 {
+        font-size: 7vw;
+    }
 
-.cabecera__indexs__paginas{
-    @include grid (1fr, 1fr, none, none);
-    justify-items: center;
-    list-style: none;
-    padding: 1rem;
-    margin: 0rem;
-}
+    .cabecera__indexs__paginas {
+        @include grid (1fr, 1fr, none, none);
+        justify-items: center;
+        list-style: none;
+        padding: 1rem;
+        margin: 0rem;
+    }
 
-.cabecera__indexs__items__paginas{
-    @include tamaño (16rem, 3rem);
-    padding-top: 1%;
-    display: flex;
-    justify-content: center;
-}
+    .cabecera__indexs__items__paginas {
+        @include tamaño (16rem, 3rem);
+        padding-top: 1%;
+        display: flex;
+        justify-content: center;
+    }
 
-/*FOOTER TODA LA PAGINA 450px*/
+    /*FOOTER TODA LA PAGINA 450px*/
 
-.footer__paginas{
-    width: 100%;
-    @include flex (column, center, none);
-    flex-wrap: wrap;
-}
+    .footer__paginas {
+        width: 100%;
+        @include flex (column, center, none);
+        flex-wrap: wrap;
+    }
 
-.col-md-3{
-    @include flex (row, center, center);
-    margin-bottom: 1rem;
-}
+    .col-md-3 {
+        @include flex (row, center, center);
+        margin-bottom: 1rem;
+    }
 
-.img-fluid{
-    width: 50%;
-}
+    .img-fluid {
+        width: 50%;
+    }
 
-.mb-3{
-    padding: 1rem;
-}
+    .mb-3 {
+        padding: 1rem;
+    }
 }

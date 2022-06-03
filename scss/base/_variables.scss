@@ -8,14 +8,14 @@ $color-AzulOcuro: #021d3b;
 
 /*EXTEND*/
 
-%Border-10px{
+%Border-10px {
     border: solid 10px;
     border-color: #000000;
 }
 
 /*MIXIN*/
 
-@mixin grid ($columns, $rows, $justify, $aling){
+@mixin grid ($columns, $rows, $justify, $aling) {
     display: grid;
     grid-template-columns: $columns;
     grid-template-rows: $rows;
@@ -24,17 +24,17 @@ $color-AzulOcuro: #021d3b;
 
 }
 
-@mixin flex ($direction, $justify, $aling){
+@mixin flex ($direction, $justify, $aling) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $aling;
-    
+
 }
 
 @mixin tamaño ($width, $height) {
     width: $width;
     height: $height;
-    
+
 }

@@ -1,6 +1,6 @@
 /* HEADER OTROS HTMLS HEADER OTROS HTMLS HEADER OTROS HTMLS HEADER OTROS HTMLS HEADER OTROS HTMLS HEADER OTROS HTMLS*/
 
-.cabecera__paginas{
+.cabecera__paginas {
     background-color: ($color-AzulMedio);
     @include grid (1fr 6fr, none, center, center);
     flex-wrap: wrap;
@@ -11,14 +11,14 @@
     position: sticky;
 }
 
-.cabecera__indexs__paginas{
+.cabecera__indexs__paginas {
     @include grid (1fr 1fr 1fr 1fr 1fr 1fr, none, center, center);
     list-style: none;
     padding-left: 15px;
     padding-top: 12px;
 }
 
-.cabecera__indexs__items__paginas{
+.cabecera__indexs__items__paginas {
     text-align: center;
     font-style: normal;
     font-size: medium;
@@ -29,28 +29,29 @@
     border: solid 2px;
     border-color: ($color-AzulOcuro);
     border-radius: 10%;
-    
-        &:hover {
-            background-color: #e9c889;
-            border: solid 4px;
-            border-color: ($color-Mostaza);
-            transition-property: border;
-            transition-duration: 0.3s;
+
+    &:hover {
+        background-color: #e9c889;
+        border: solid 4px;
+        border-color: ($color-Mostaza);
+        transition-property: border;
+        transition-duration: 0.3s;
+    }
 }
-}
-.cabecera__indexs__items__paginas a{
+
+.cabecera__indexs__items__paginas a {
     text-decoration: none;
     color: #000000;
 }
 
-.row.g-0{
+.row.g-0 {
     background-color: #242a3f;
     padding: 0.5rem;
 }
 
 /*MIND OTROS HTMLS MIND OTROS HTMLS MIND OTROS HTMLS MIND OTROS HTMLS MIND OTROS HTMLS MIND OTROS HTMLS MIND OTROS HTMLS*/
 
-.cuerpo__paginas{
+.cuerpo__paginas {
     background-color: ($color-Mostaza);
     border-right: solid 10px;
     border-left: solid 10px;
@@ -58,30 +59,30 @@
     margin-bottom: -1rem;
 }
 
-.cuerpo__titulo__paginas{
+.cuerpo__titulo__paginas {
     border-bottom: solid 6px;
     border-color: #e79e176d;
     padding-top: 2rem;
     @include flex (none, center, none)
 }
 
-.cuerpo__titulo__cosas__paginas{
+.cuerpo__titulo__cosas__paginas {
     background-color: #bdbdbd;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
     list-style: none;
-    padding: 0%;    
+    padding: 0%;
 }
 
-.cuerpo__titulo__cosas__paginas li{
+.cuerpo__titulo__cosas__paginas li {
     padding-bottom: 0.5rem;
     background-color: #e9c889;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
 
-.cuerpo__articulos{
+.cuerpo__articulos {
     border-top: solid 3px;
     padding: 1rem;
     @include grid (1fr 1fr 1fr 1fr, auto, auto, auto);
@@ -89,7 +90,7 @@
     gap: 2rem;
 }
 
-.prevformulario{
+.prevformulario {
     background-color: #9f9f9f;
     @include flex (auto, center, auto);
     border-bottom: solid 2px;
@@ -99,36 +100,37 @@
     font-size: larger;
 }
 
-.formulario{
+.formulario {
     margin: 1rem 8rem 1rem 8rem;
     padding: 1rem;
     border: solid 1px;
     background-color: #d2d2d2;
 }
 
-.contenedor__boton{
+.contenedor__boton {
     display: flex;
     justify-content: flex-end;
 }
 
-.card{
+.card {
     @include grid (1fr 1fr 1fr 1fr, auto, center, auto);
     justify-items: center;
-    align-self: center;    
+    align-self: center;
 
-        &-body{
-            background-color: #62646732;
-            margin: 0.5rem;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    &-body {
+        background-color: #62646732;
+        margin: 0.5rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
-}
-li{
+
+li {
     font-size: xx-large;
     border-bottom: solid 3px;
     border-top: solid 3px;
 }
 
-.row{
+.row {
     @include tamaño (100%, 100%);
     margin-left: 0%;
 }
